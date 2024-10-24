@@ -1,0 +1,245 @@
+Enter password:
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 69
+Server version: 8.3.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> use ruhande database;
+Database changed
+mysql> INSERT INTO NGOMA VALUES('1','IRAKOZE','SAMUEL','M','NORTHERM','GICUMBI','KANIGA','NYARWA','KINNYO','078888889','irakoze@1.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('2','tuyizere','elie','m','eastern','BUGESERA','JURU','KARARW','RWERA','072345123','tuyizer@1,com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('3','HABA','AMAHIRWE','M','SOUTHERN','HUYE','TUMBA','CYARWA','MUNINI','078290132','haba@12gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('4','kamanzi','jean','F','KIGALI CIT','GASABO','KINYINYA','SHONGI','SHORA','0791780791','kamanzi12@gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('5','rodrigue','james','m','western','karongi','shyorongi','savete','shonga','073342626','rodrigue12@gmail.co');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('6','habumugisha','eric','M','NORTHERN','GICUMBI','BWISIGE','RWERERE','KANYATE','0793452341,'habumugisha1@.com');
+    '> insert into ngoma values('6','habumugisha','eric','M','NORTHERN','GICUMBI','BWISIGE','RWERERE','KANYATE','0793452341,'habumugisha1@.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'habumugisha1@.com');
+insert into ngoma values('6','habumugisha','eric','M','NORT' at line 1
+mysql> select *from ngoma;
++-------+----------+----------+--------+------------+----------+-----------+--------+---------+------------+---------------------+
+| ID_NO | F_NAME   | L_NAME   | GENDER | PROVENCE   | DISTRICT | SECTOR    | CELL   | VILLAGE | TELEPHONE  | EMAIL               |
++-------+----------+----------+--------+------------+----------+-----------+--------+---------+------------+---------------------+
+|     1 | IRAKOZE  | SAMUEL   | M      | NORTHERM   | GICUMBI  | KANIGA    | NYARWA | KINNYO  | 078888889  | irakoze@1.com       |
+|     2 | tuyizere | elie     | m      | eastern    | BUGESERA | JURU      | KARARW | RWERA   | 072345123  | tuyizer@1,com       |
+|     3 | HABA     | AMAHIRWE | M      | SOUTHERN   | HUYE     | TUMBA     | CYARWA | MUNINI  | 078290132  | haba@12gmail.com    |
+|     4 | kamanzi  | jean     | F      | KIGALI CIT | GASABO   | KINYINYA  | SHONGI | SHORA   | 0791780791 | kamanzi12@gmail.com |
+|     5 | rodrigue | james    | m      | western    | karongi  | shyorongi | savete | shonga  | 073342626  | rodrigue12@gmail.co |
++-------+----------+----------+--------+------------+----------+-----------+--------+---------+------------+---------------------+
+5 rows in set (0.00 sec)
+
+mysql> insert into ngoma values('6','baahati','hakiza','F','KIGALICITY','NYARUGENGE','KANOMBE','CYAVE',KAVE','0791780791','bahato1@gmail.com');
+    '> insert into ngoma values('6','baahati','hakiza','F','KIGALICITY','NYARUGENGE','KANOMBE','CYAVE',KAVE','0791780791','bahato1@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '','0791780791','bahato1@gmail.com');
+insert into ngoma values('6','baahati','hak' at line 1
+mysql> insert into ngoma values('6','baahati','hakiza','F','KIGALICITY','NYARUGENGE','KANOMBE','CYAVE',KAVE','0791780778','bahato1@gmail.com');
+    '>
+    '> insert into ngoma values('6','baahati','hakiza','F','KIGALICITY','NYARUGENGE','KANOMBE','CYAVE',KAVE','0791780791','bahato1@gmail.co');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '','0791780778','bahato1@gmail.com');
+
+insert into ngoma values('6','baahati','ha' at line 1
+mysql> insert into ngoma values('6','BAHATI','HAKIZA',F','KIGALI','NYARUGENGE','KANOMBE','CYIVE','CYERE','0781230012','hakiza1@gmail,com');
+    '> insert into ngoma values('6','BAHATI','HAKIZA',F','KIGALI','NYARUGENGE','KANOMBE','CYIVE','CYERE','0781230012','hakiza1@gmail,com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '','KIGALI','NYARUGENGE','KANOMBE','CYIVE','CYERE','0781230012','hakiza1@gmail,co' at line 1
+mysql> insert into ngoma values('6','BAHATI','HAKIZA',F','KIGAL','YARUGENGE','KANOMBE','CYIVE','CYERE','0781230012','hakiza1@gmail,com');
+    '> insert into ngoma values('6','BAHATI','HAKIZA',F','KIGAL','YARUGENGE','KANOMBE','CYIVE','CYERE','0781230012','hakiza1@gmail,com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '','KIGAL','YARUGENGE','KANOMBE','CYIVE','CYERE','0781230012','hakiza1@gmail,com'' at line 1
+mysql> select *from ngoma;
++-------+----------+----------+--------+------------+----------+-----------+--------+---------+------------+---------------------+
+| ID_NO | F_NAME   | L_NAME   | GENDER | PROVENCE   | DISTRICT | SECTOR    | CELL   | VILLAGE | TELEPHONE  | EMAIL               |
++-------+----------+----------+--------+------------+----------+-----------+--------+---------+------------+---------------------+
+|     1 | IRAKOZE  | SAMUEL   | M      | NORTHERM   | GICUMBI  | KANIGA    | NYARWA | KINNYO  | 078888889  | irakoze@1.com       |
+|     2 | tuyizere | elie     | m      | eastern    | BUGESERA | JURU      | KARARW | RWERA   | 072345123  | tuyizer@1,com       |
+|     3 | HABA     | AMAHIRWE | M      | SOUTHERN   | HUYE     | TUMBA     | CYARWA | MUNINI  | 078290132  | haba@12gmail.com    |
+|     4 | kamanzi  | jean     | F      | KIGALI CIT | GASABO   | KINYINYA  | SHONGI | SHORA   | 0791780791 | kamanzi12@gmail.com |
+|     5 | rodrigue | james    | m      | western    | karongi  | shyorongi | savete | shonga  | 073342626  | rodrigue12@gmail.co |
++-------+----------+----------+--------+------------+----------+-----------+--------+---------+------------+---------------------+
+5 rows in set (0.00 sec)
+
+mysql> insert into ngoma values('6','ntampaka','eric','F','NORTHERN','RULINDO','SAVE','TOTO','BUSOGO','079123455','ntampa1@gmail,com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('7','gashuryi','paulo','f','sourthern','kamonyi','rwera','rweza','rweta','078343562','gashugi1@gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('8','shema','gabin','m','east','kirehe','kera','harabaye','nihakabe','0781727265','shema1@gmail.com');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> inert into ngoma values('9','olivier','Robinnho'F','northern','burera','karabo','tombi','tembera','0787667899','olivier1@gmail.com');
+    '> inert into ngoma values('9','olivier','Robinnho'F','northern','burera','karabo','tombi','tembera','0787667899','olivier1@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inert into ngoma values('9','olivier','Robinnho'F','northern','burera','karabo',' at line 1
+mysql> inert into ngoma values('9','olivier','Robinnho','F','northern','burera','karabo','tombi','tembera','0787667899','olivier1@gmail.com');
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inert into ngoma values('9','olivier','Robinnho','F','northern','burera','karabo' at line 1
+mysql> insert into ngoma values('9','olivier','Robinnho','F','northern','burera','karabo','tombi','tembera','0787667899','olivier1@gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into ngoma values('10','hagaba','mbapee','M','western','karongo','kabaya','temba','tora','0677888999','mbape1@gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> ALTER TABLE ADD LOCATION(14);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ADD LOCATION(14)' at line 1
+mysql> insert into ngoma values('10','hagaba','mbapee','M','western','karongo','kabaya','temba','tora','0677888999','mbape1@gmail.com');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> ALTER NGOMA ADD LOCATION(12);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NGOMA ADD LOCATION(12)' at line 1
+mysql> ALTER TABLE NGOMA ADD LOCATION(12);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(12)' at line 1
+mysql> ALTER TABLE NGOMA ADD LOCATION CHAR(12);
+Query OK, 11 rows affected (0.05 sec)
+Records: 11  Duplicates: 0  Warnings: 0
+
+mysql> SELECT *FROM NGOMA;
++-------+----------+----------+--------+------------+----------+-----------+----------+----------+------------+---------------------+----------+
+| ID_NO | F_NAME   | L_NAME   | GENDER | PROVENCE   | DISTRICT | SECTOR    | CELL     | VILLAGE  | TELEPHONE  | EMAIL               | LOCATION |
++-------+----------+----------+--------+------------+----------+-----------+----------+----------+------------+---------------------+----------+
+|     1 | IRAKOZE  | SAMUEL   | M      | NORTHERM   | GICUMBI  | KANIGA    | NYARWA   | KINNYO   | 078888889  | irakoze@1.com       | NULL     |
+|     2 | tuyizere | elie     | m      | eastern    | BUGESERA | JURU      | KARARW   | RWERA    | 072345123  | tuyizer@1,com       | NULL     |
+|     3 | HABA     | AMAHIRWE | M      | SOUTHERN   | HUYE     | TUMBA     | CYARWA   | MUNINI   | 078290132  | haba@12gmail.com    | NULL     |
+|     4 | kamanzi  | jean     | F      | KIGALI CIT | GASABO   | KINYINYA  | SHONGI   | SHORA    | 0791780791 | kamanzi12@gmail.com | NULL     |
+|     5 | rodrigue | james    | m      | western    | karongi  | shyorongi | savete   | shonga   | 073342626  | rodrigue12@gmail.co | NULL     |
+|     6 | ntampaka | eric     | F      | NORTHERN   | RULINDO  | SAVE      | TOTO     | BUSOGO   | 079123455  | ntampa1@gmail,com   | NULL     |
+|     7 | gashuryi | paulo    | f      | sourthern  | kamonyi  | rwera     | rweza    | rweta    | 078343562  | gashugi1@gmail.com  | NULL     |
+|     8 | shema    | gabin    | m      | east       | kirehe   | kera      | harabaye | nihakabe | 0781727265 | shema1@gmail.com    | NULL     |
+|     9 | olivier  | Robinnho | F      | northern   | burera   | karabo    | tombi    | tembera  | 0787667899 | olivier1@gmail.com  | NULL     |
+|    10 | hagaba   | mbapee   | M      | western    | karongo  | kabaya    | temba    | tora     | 0677888999 | mbape1@gmail.com    | NULL     |
+|    10 | hagaba   | mbapee   | M      | western    | karongo  | kabaya    | temba    | tora     | 0677888999 | mbape1@gmail.com    | NULL     |
++-------+----------+----------+--------+------------+----------+-----------+----------+----------+------------+---------------------+----------+
+11 rows in set (0.00 sec)
+
+mysql> ALTER TABLE NGOMA DROP EMAIL;
+Query OK, 11 rows affected (0.05 sec)
+Records: 11  Duplicates: 0  Warnings: 0
+
+mysql> SELECT *FROM NGOMA;
++-------+----------+----------+--------+------------+----------+-----------+----------+----------+------------+----------+
+| ID_NO | F_NAME   | L_NAME   | GENDER | PROVENCE   | DISTRICT | SECTOR    | CELL     | VILLAGE  | TELEPHONE  | LOCATION |
++-------+----------+----------+--------+------------+----------+-----------+----------+----------+------------+----------+
+|     1 | IRAKOZE  | SAMUEL   | M      | NORTHERM   | GICUMBI  | KANIGA    | NYARWA   | KINNYO   | 078888889  | NULL     |
+|     2 | tuyizere | elie     | m      | eastern    | BUGESERA | JURU      | KARARW   | RWERA    | 072345123  | NULL     |
+|     3 | HABA     | AMAHIRWE | M      | SOUTHERN   | HUYE     | TUMBA     | CYARWA   | MUNINI   | 078290132  | NULL     |
+|     4 | kamanzi  | jean     | F      | KIGALI CIT | GASABO   | KINYINYA  | SHONGI   | SHORA    | 0791780791 | NULL     |
+|     5 | rodrigue | james    | m      | western    | karongi  | shyorongi | savete   | shonga   | 073342626  | NULL     |
+|     6 | ntampaka | eric     | F      | NORTHERN   | RULINDO  | SAVE      | TOTO     | BUSOGO   | 079123455  | NULL     |
+|     7 | gashuryi | paulo    | f      | sourthern  | kamonyi  | rwera     | rweza    | rweta    | 078343562  | NULL     |
+|     8 | shema    | gabin    | m      | east       | kirehe   | kera      | harabaye | nihakabe | 0781727265 | NULL     |
+|     9 | olivier  | Robinnho | F      | northern   | burera   | karabo    | tombi    | tembera  | 0787667899 | NULL     |
+|    10 | hagaba   | mbapee   | M      | western    | karongo  | kabaya    | temba    | tora     | 0677888999 | NULL     |
+|    10 | hagaba   | mbapee   | M      | western    | karongo  | kabaya    | temba    | tora     | 0677888999 | NULL     |
++-------+----------+----------+--------+------------+----------+-----------+----------+----------+------------+----------+
+11 rows in set (0.00 sec)
+
+mysql> UPDATE TABLE NGOMA SET TELEPHONE=PHONE NO WHERE ID_NO=1;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE NGOMA SET TELEPHONE=PHONE NO WHERE ID_NO=1' at line 1
+mysql> UPDTE TABLE NGOMA SET TELEPHONE='PHONE NO' WHERE ID='1';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'UPDTE TABLE NGOMA SET TELEPHONE='PHONE NO' WHERE ID='1'' at line 1
+mysql> UPDATE TABLE NGOMA SET TELEPHONE='PHONE NO' WHERE ID='1';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE NGOMA SET TELEPHONE='PHONE NO' WHERE ID='1'' at line 1
+mysql> UPDATE TABLE NGOMA SET TELEPHONE='PHONE NO' WHERE ID_NO= '1';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE NGOMA SET TELEPHONE='PHONE NO' WHERE ID_NO= '1'' at line 1
+mysql> UPDATE TABLE NGOMA SET TELEPHONE='PHONE_NO' WHERE ID_NO= '1';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE NGOMA SET TELEPHONE='PHONE_NO' WHERE ID_NO= '1'' at line 1
+mysql> UPDATE TABLE NGOMA SET TELEPHONE='PHONE_NO' WHERE ID_NO= '1';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'TABLE NGOMA SET TELEPHONE='PHONE_NO' WHERE ID_NO= '1'' at line 1
+mysql> UPDATE NGOMA SET TELEPHONE='PHONE_NO' WHERE ID_NO= '1';
+Query OK, 1 row affected (0.00 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> SELECT* FROM NGOMA;
++-------+----------+----------+--------+------------+----------+-----------+----------+----------+------------+----------+
+| ID_NO | F_NAME   | L_NAME   | GENDER | PROVENCE   | DISTRICT | SECTOR    | CELL     | VILLAGE  | TELEPHONE  | LOCATION |
++-------+----------+----------+--------+------------+----------+-----------+----------+----------+------------+----------+
+|     1 | IRAKOZE  | SAMUEL   | M      | NORTHERM   | GICUMBI  | KANIGA    | NYARWA   | KINNYO   | PHONE_NO   | NULL     |
+|     2 | tuyizere | elie     | m      | eastern    | BUGESERA | JURU      | KARARW   | RWERA    | 072345123  | NULL     |
+|     3 | HABA     | AMAHIRWE | M      | SOUTHERN   | HUYE     | TUMBA     | CYARWA   | MUNINI   | 078290132  | NULL     |
+|     4 | kamanzi  | jean     | F      | KIGALI CIT | GASABO   | KINYINYA  | SHONGI   | SHORA    | 0791780791 | NULL     |
+|     5 | rodrigue | james    | m      | western    | karongi  | shyorongi | savete   | shonga   | 073342626  | NULL     |
+|     6 | ntampaka | eric     | F      | NORTHERN   | RULINDO  | SAVE      | TOTO     | BUSOGO   | 079123455  | NULL     |
+|     7 | gashuryi | paulo    | f      | sourthern  | kamonyi  | rwera     | rweza    | rweta    | 078343562  | NULL     |
+|     8 | shema    | gabin    | m      | east       | kirehe   | kera      | harabaye | nihakabe | 0781727265 | NULL     |
+|     9 | olivier  | Robinnho | F      | northern   | burera   | karabo    | tombi    | tembera  | 0787667899 | NULL     |
+|    10 | hagaba   | mbapee   | M      | western    | karongo  | kabaya    | temba    | tora     | 0677888999 | NULL     |
+|    10 | hagaba   | mbapee   | M      | western    | karongo  | kabaya    | temba    | tora     | 0677888999 | NULL     |
++-------+----------+----------+--------+------------+----------+-----------+----------+----------+------------+----------+
+11 rows in set (0.00 sec)
+
+mysql> SELECT ID,GENDER,F_NAME,L_NAME,PROVENCE,DISTRICT FROM NGOMA;
+ERROR 1054 (42S22): Unknown column 'ID' in 'field list'
+mysql> SELECT ID_NO,GENDER,F_NAME,L_NAME,PROVENCE,DISTRICT FROM NGOMA;
++-------+--------+----------+----------+------------+----------+
+| ID_NO | GENDER | F_NAME   | L_NAME   | PROVENCE   | DISTRICT |
++-------+--------+----------+----------+------------+----------+
+|     1 | M      | IRAKOZE  | SAMUEL   | NORTHERM   | GICUMBI  |
+|     2 | m      | tuyizere | elie     | eastern    | BUGESERA |
+|     3 | M      | HABA     | AMAHIRWE | SOUTHERN   | HUYE     |
+|     4 | F      | kamanzi  | jean     | KIGALI CIT | GASABO   |
+|     5 | m      | rodrigue | james    | western    | karongi  |
+|     6 | F      | ntampaka | eric     | NORTHERN   | RULINDO  |
+|     7 | f      | gashuryi | paulo    | sourthern  | kamonyi  |
+|     8 | m      | shema    | gabin    | east       | kirehe   |
+|     9 | F      | olivier  | Robinnho | northern   | burera   |
+|    10 | M      | hagaba   | mbapee   | western    | karongo  |
+|    10 | M      | hagaba   | mbapee   | western    | karongo  |
++-------+--------+----------+----------+------------+----------+
+11 rows in set (0.00 sec)
+
+mysql> SELECT FROM NGOMA WHERE GENDER ='M'OR PROVENCE='NORTHERN';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM NGOMA WHERE GENDER ='M'OR PROVENCE='NORTHERN'' at line 1
+mysql> SELECT FROM NGOMA WHERE GENDER ='M'OR PROVENCE ='NORTHERN';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM NGOMA WHERE GENDER ='M'OR PROVENCE ='NORTHERN'' at line 1
+mysql> SELECT FROM NGOMA WHERE GENDER ='M'OR PROVENCE ='NORTHERN';
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM NGOMA WHERE GENDER ='M'OR PROVENCE ='NORTHERN'' at line 1
+mysql> SELECT *FROM NGOMA WHERE GENDER ='M'OR PROVENCE ='NORTHERN';
++-------+----------+----------+--------+----------+----------+-----------+----------+----------+------------+----------+
+| ID_NO | F_NAME   | L_NAME   | GENDER | PROVENCE | DISTRICT | SECTOR    | CELL     | VILLAGE  | TELEPHONE  | LOCATION |
++-------+----------+----------+--------+----------+----------+-----------+----------+----------+------------+----------+
+|     1 | IRAKOZE  | SAMUEL   | M      | NORTHERM | GICUMBI  | KANIGA    | NYARWA   | KINNYO   | PHONE_NO   | NULL     |
+|     2 | tuyizere | elie     | m      | eastern  | BUGESERA | JURU      | KARARW   | RWERA    | 072345123  | NULL     |
+|     3 | HABA     | AMAHIRWE | M      | SOUTHERN | HUYE     | TUMBA     | CYARWA   | MUNINI   | 078290132  | NULL     |
+|     5 | rodrigue | james    | m      | western  | karongi  | shyorongi | savete   | shonga   | 073342626  | NULL     |
+|     6 | ntampaka | eric     | F      | NORTHERN | RULINDO  | SAVE      | TOTO     | BUSOGO   | 079123455  | NULL     |
+|     8 | shema    | gabin    | m      | east     | kirehe   | kera      | harabaye | nihakabe | 0781727265 | NULL     |
+|     9 | olivier  | Robinnho | F      | northern | burera   | karabo    | tombi    | tembera  | 0787667899 | NULL     |
+|    10 | hagaba   | mbapee   | M      | western  | karongo  | kabaya    | temba    | tora     | 0677888999 | NULL     |
+|    10 | hagaba   | mbapee   | M      | western  | karongo  | kabaya    | temba    | tora     | 0677888999 | NULL     |
++-------+----------+----------+--------+----------+----------+-----------+----------+----------+------------+----------+
+9 rows in set (0.00 sec)
+
+mysql> SELECT *FROM NGOMA WHERE GENDER ='M'AND PROVENCE ='NORTHERN';
+Empty set (0.00 sec)
+
+mysql> SELECT *FROM NGOMA;
++-------+----------+----------+--------+------------+----------+-----------+----------+----------+------------+----------+
+| ID_NO | F_NAME   | L_NAME   | GENDER | PROVENCE   | DISTRICT | SECTOR    | CELL     | VILLAGE  | TELEPHONE  | LOCATION |
++-------+----------+----------+--------+------------+----------+-----------+----------+----------+------------+----------+
+|     1 | IRAKOZE  | SAMUEL   | M      | NORTHERM   | GICUMBI  | KANIGA    | NYARWA   | KINNYO   | PHONE_NO   | NULL     |
+|     2 | tuyizere | elie     | m      | eastern    | BUGESERA | JURU      | KARARW   | RWERA    | 072345123  | NULL     |
+|     3 | HABA     | AMAHIRWE | M      | SOUTHERN   | HUYE     | TUMBA     | CYARWA   | MUNINI   | 078290132  | NULL     |
+|     4 | kamanzi  | jean     | F      | KIGALI CIT | GASABO   | KINYINYA  | SHONGI   | SHORA    | 0791780791 | NULL     |
+|     5 | rodrigue | james    | m      | western    | karongi  | shyorongi | savete   | shonga   | 073342626  | NULL     |
+|     6 | ntampaka | eric     | F      | NORTHERN   | RULINDO  | SAVE      | TOTO     | BUSOGO   | 079123455  | NULL     |
+|     7 | gashuryi | paulo    | f      | sourthern  | kamonyi  | rwera     | rweza    | rweta    | 078343562  | NULL     |
+|     8 | shema    | gabin    | m      | east       | kirehe   | kera      | harabaye | nihakabe | 0781727265 | NULL     |
+|     9 | olivier  | Robinnho | F      | northern   | burera   | karabo    | tombi    | tembera  | 0787667899 | NULL     |
+|    10 | hagaba   | mbapee   | M      | western    | karongo  | kabaya    | temba    | tora     | 0677888999 | NULL     |
+|    10 | hagaba   | mbapee   | M      | western    | karongo  | kabaya    | temba    | tora     | 0677888999 | NULL     |
++-------+----------+----------+--------+------------+----------+-----------+----------+----------+------------+----------+
+11 rows in set (0.00 sec)
+
+mysql>
